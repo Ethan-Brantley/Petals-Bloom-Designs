@@ -1,0 +1,699 @@
+/* 
+ *
+ * Global CSS styling for Petals & Bloom Designs
+ * All style rules are built mobile-first
+ *
+ * Built by Atlas Web Design (2024)
+ *
+ */
+
+@font-face {
+
+    font-family: Zarid;
+    src: url(../fonts/29lt-zarid-serif-regular.ttf);
+
+} 
+
+body {
+
+    font-family: Zarid;
+    font-size: 1.3rem;
+    background-image: url("../images/page-background2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#container {
+
+    min-height: 100vh;
+
+}
+
+section.content {
+
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+section.content div {
+
+    display: block;
+
+}
+
+section.content.float-center {
+
+    min-height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section.content.float-center .content-row {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 50px;
+
+}
+
+.content-row div {
+
+
+
+}
+
+.content-row .flip-card {
+
+    height: 600px;
+    width: 90vw;
+    padding: 25px;
+    perspective: 1000px;
+    
+}
+
+.flip-card-inner {
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+}
+
+.flip-card:hover .flip-card-inner {
+
+    transform: rotateY(180deg);
+
+}
+
+.flip-card-front, .flip-card-back {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0%;
+    top: 0%;
+
+}
+
+.flip-card-front {
+
+    background-color: white;
+    padding: 10px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.flip-card-back {
+
+    background-color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+
+}
+
+.flip-card-front h2 {
+
+    font-weight: 1;
+
+}
+
+
+.swiper {
+
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+
+}
+
+.swiper-slide {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.swiper-button-next, .swiper-button-prev {
+
+    color: black;
+    width: 50px;
+    height: 50px;
+
+}
+
+#landscape {
+
+    background-image:url("../images/exterior_design.jpg");
+    background-position: 10%;
+
+}
+
+#interior {
+
+    background-image: url("../images/interior_plant_arrangement.jpg");
+    background-position: 10% 25%;
+
+}
+
+#containers {
+
+    background-image: url("../images/container_arrangement.jpg");
+    background-position: 25%;
+
+}
+
+section.content.float-center div {
+
+
+
+}
+
+section.content.float-center h2 {
+
+    text-align: center;
+    width: 100%;
+
+}
+
+.fa {
+
+    font-size: 25px;
+
+}
+
+a .fa {
+
+    color: black;
+    text-decoration: none;
+
+}
+
+.button {
+
+    display: flex;
+    background-color: #b2c5a4;
+    width: 100px;
+    height: 50px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    margin-top: 25px;
+
+}
+
+.button a {
+
+    text-decoration: none;
+    color: #4f554c;
+
+}
+
+.parallax {
+
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.highlight {
+
+    text-decoration: underline #b2c5a4 3px;
+
+}
+
+/*
+ *
+ * Hero Styles
+ *
+ */
+
+.hero-img {
+
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+
+}
+
+.wave {
+
+    width: 100%;
+    max-height: 25px;
+    object-fit: cover;
+    object-position: 100% 20%;
+
+}
+
+/*
+ *
+ * Navigation Styles
+ *
+ */
+
+#logo {
+
+    width: 50%;
+    position: relative;
+    left: 50%;
+    translate: -50%;
+
+}
+
+#nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b2c5a4;
+    padding: 10px 20px;
+    color: #4f554c;
+    overflow: hidden;
+
+}
+
+.menu-toggle {
+
+    background: none;
+    border: none;
+    color: #4f554c;
+    font-size: 1.3rem;
+    cursor: pointer;
+    z-index: 2;
+    order: 2;
+    margin-bottom: auto;
+    margin-left: auto;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+}
+
+.nav-links {
+
+    list-style: none;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    background-color: #b2c5a4;
+    padding: 0px;
+    transition: width 0.1s;
+    overflow: hidden;
+    z-index: 1;
+    position: fixed;
+
+}
+
+.nav-links li {
+
+    text-align: right;
+
+}
+
+.nav-links a {
+
+    text-decoration: none;
+    color: #4f554c;
+    font-size: 1.4rem;
+    transition: color 0.3s;
+
+}
+
+.nav-links a:hover {
+
+    color: #798174;
+
+}
+
+.nav-links.show {
+
+    width: 100%;
+    padding: 20px;
+
+}
+
+/*
+ *
+ * Gallery Styles
+ *
+ */
+
+#nanogallery2 {
+
+    padding: 50px; 
+
+}
+
+/*
+ *
+ * Footer Styles
+ *
+ */
+
+#footer {
+
+    background-color: #b2c5a4;
+    color: #4f554c;
+    padding: 20px;
+    text-align: center;
+
+
+}
+
+.footer-container {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.footer-section h3 {
+
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+
+}
+
+.footer-section p,
+.footer-section a {
+
+    color: #4f554c;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+}
+
+.footer-section a:hover {
+
+    color: #798174;
+    text-decoration: underline;
+
+}
+
+.footer-section ul {
+
+    list-style: none;
+    padding: 0;
+
+}
+
+.footer-section ul li {
+
+    margin-bottom: 10px;
+
+}
+
+.footer-section ul li a {
+
+    color: #4f554c;
+    transition: color 0.3s ease;
+
+}
+
+.footer-section ul li a:hover {
+
+    color: #798174;
+  
+}
+
+.footer-copyright {
+
+    margin-top: 20px;
+    text-align: center; /* Center-align text */
+    font-size: 0.8rem;
+    color: #3c3d3b;
+  
+}
+
+/*
+ *
+ * Contact Form Styling
+ *
+ */
+
+#contact-form {
+
+    padding: 50px;
+
+}
+
+.cog-button {
+
+    width: 100%;
+
+}
+
+.alt-contacts {
+
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+
+}
+
+.alt-contacts li {
+
+    padding: 25px;
+    margin: 5px;
+    margin-top: 50px;
+
+}
+
+/*
+ *
+ * Biography Styling
+ *
+ */
+
+.content.biography {
+ 
+
+
+}
+
+.content.content.biography h2 {
+
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.content.biography img {
+
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    object-position: 0% 0%;
+    margin: auto;
+    box-shadow: 2px 2px 25px #000000;
+
+}
+
+.content.biography div {
+
+    padding: 50px;
+    background-color: #ebf1e4;
+
+}
+
+/* Larger screens */
+
+@media (min-width: 768px) {
+
+    .hero {
+
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        font-size: 16px;
+
+    }
+
+    .hero-img {
+
+        height: 500px;
+        object-position: 100% 45%;
+        background: fixed;
+
+    }
+
+    #logo {
+
+        width: 250px;
+
+    }
+
+    .content-row .flip-card {
+
+        width: 25vw;
+
+    }
+
+    /* For navigation on larger screens*/
+
+    .menu-toggle {
+
+        display: none;
+
+    }
+
+    .nav-links {
+
+        display: flex;
+        position: static;
+        flex-direction: row;
+        gap: 60px;
+        background: none;
+        padding: 0px;
+        width: 100%;
+        justify-content: right;
+        margin: 0px;
+
+    }
+
+    /* For the footer on larger screens*/
+
+    .footer-container {
+
+        flex-direction: row;
+        justify-content: left;
+        text-align: left;
+        gap: 0px;
+
+    }
+
+    .footer-section {
+
+        flex: 1 1 auto;
+
+    }
+
+    /* For Contact Form */
+
+    .cog-button {
+
+        max-width: 150px;
+        position: relative;
+        left: 50%;
+        translate: -50%;
+
+    }
+
+    .alt-contacts li {
+
+        margin: 50px;
+
+    }
+
+    section.content {
+
+        flex-direction: row;
+        padding: 0px, 75px;
+
+    }
+
+    section.content.float-right {
+
+        flex-direction: row-reverse;
+    
+    }
+
+    .content.biography div {
+
+        margin: 75px;
+        padding: 25px;   
+    
+    }
+
+    .wave {
+
+        max-height: 200px;
+    }
+
+}
+
+/* Media Query: Desktop and Larger */
+@media (min-width: 1024px) {
+  .footer {
+    padding: 40px;
+  }
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer-section h3 {
+    font-size: 1.6rem;
+  }
+
+  .footer-section p,
+  .footer-section a {
+    font-size: 1.2rem;
+  }
+
+  .footer-copyright {
+
+    margin-top: 30px;
+    font-size: 1.1rem;
+
+  }
+
+  .content.biography img {
+
+    height: 450px;
+    width: 450px;
+    box-shadow: 0px 10px 25px;
+
+}
+
+section.content.float-center .content-row {
+
+    flex-direction: row;
+
+}
+
+}

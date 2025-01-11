@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <a href="index.html"><img src="../images/logo.png" id="logo"></a>
+            <button class="menu-toggle" aria-label="Open menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/services.html">Services</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="container">
+        <section>
+            <div class="parallax" style="background-image: url('images/geranium_leaves.jpg')"></div>
+        </section>
+
+        <section class="content float-left">
+            <div>
+                <h2>Biophilia</h2>
+                <h3 class="highlight">What is Biophilia?</h3>
+                <p>Biophilia is</p>
+            </div>
+        </section>
+
+        <section class="content float-center">
+            <h2>Our Process</h2>
+            <div class="content-row">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+        </section>
+
+        <section class="content float-right">
+            <img src="https://placehold.co/500">
+            <div>
+                <h2>Outdoor Living Spaces</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur distinctio ea explicabo ratione. Doloribus iusto omnis dolores eos quae illo ullam tempore eaque, sed porro vero autem dolorum, odit rerum.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <!-- ... -->
+                </div>
+                <!-- If you want navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        <section>
+            <h2 style="text-align:center;">Let's Get Connected</h2>
+            <div class="button"><a href="pages/contact.html">Contact Us</a></div>
+            <ul class="alt-contacts">
+                <li class="left"><a href="https://www.facebook.com/people/PetalsBloom-Designs/61561561566192/" target=”_blank”><i class="fa fa-facebook"></i></a></li>
+                <li><a href="tel:9702171293"><i class="fa fa-phone"></i></a></li>
+                <li class="right"><a href="https://www.instagram.com/petals_bloomdesigns/" target=”_blank”><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </section>
+    </div>
+
+    <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-93.95,-114.94 C118.79,292.61 189.90,41.95 649.26,102.14 L500.00,150.00 L-0.84,152.47 Z" style="stroke: none; fill: #b2c5a4;"></path></svg></div>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-section company-info">
+                <h3>Petals + Bloom Designs</h3>
+                <p>3825 West Co Rd. 54G, LaPorte CO, 80535</p>
+                <p>Petals.Bloom.Designs@gmail.com</p>
+                <p>970-217-1293</p>
+
+            </div>
+            <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/services.html">Services</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social-media">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/petals_bloomdesigns/" target=”_blank”>Instagram</a></li>
+                    <li><a href="https://www.facebook.com/people/PetalsBloom-Designs/61561561566192/" target=”_blank”>Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; <span id="copyrightYear"></span> Petals + Bloom Designs</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/b7e3862d97.js" crossorigin="anonymous"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/misc.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal', // 'horizontal' or 'vertical'
+            loop: true, // Loop through slides
+            centeredSlides: true,
+            slidesPerView: 1,
+            
+            // If you want pagination (bullets)
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            },
+            
+            // If you want navigation buttons
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+            
+            observer: true,
+            observeParents: true,
+            parallax:true,
+            });
+            });
+    </script>
+</body>
+</html>
