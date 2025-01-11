@@ -538,9 +538,21 @@ a .fa {
 
 }
 
+.mobile-hide {
+
+    visibility: hidden;
+
+}
+
 /* Larger screens */
 
 @media (min-width: 768px) {
+
+    .mobile-hide {
+
+        visibility: visible;
+
+    }
 
     .hero {
 
