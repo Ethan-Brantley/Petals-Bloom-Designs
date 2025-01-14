@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <nav id="nav">
+        <nav id="nav" >
             <a href="index.html"><img src="images/logo.png" id="logo"></a>
             <button class="menu-toggle" aria-label="Open menu">☰</button>
             <ul class="nav-links">
@@ -23,45 +23,75 @@
             </ul>
         </nav>
     </header>
+
+    <img src="../images/nav_wave.svg" class="wave">
     
     <div id="container">
-        <section>
-            <div class="parallax" style="background-image: url('images/geranium_leaves.jpg')"></div>
-        </section>
-
         <section class="content float-left">
-            <div>
-                <h2>Biophilia</h2>
-                <h3 class="highlight">What is Biophilia?</h3>
-                <p>Biophilia is</p>
+            <div style="padding: 50px;">
+                <h2>Hi there!</h2>
+                <h3 class="highlight">We are Petals & Bloom Designs.</h3>
+                <p>Excited about
+                    incorporating nature
+                    into your indoor
+                    spaces? We are a small business based in
+                    Northern Colorado. We specialize in creating
+                    warm and inviting
+                    environments that
+                    seamlessly blend the
+                    indoors with the
+                    outdoors. Whether
+                    it's for your office or
+                    home, we are eager to
+                    design a space you
+                    will love!</p>
             </div>
         </section>
 
-        <section class="content float-center">
+        <section>
+            <div class="parallax" style="background-image: url('images/geranium_leaves.jpg')"><a href="#process" class="scroll-cue fa fa-chevron-down"></a></div>
+        </section>
+
+        <section class="content float-center" style="margin-top:50px;" id="process">
             <h2>Our Process</h2>
             <div class="content-row">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
+                <div class="process-cell">
+                    <div class="process-numeral" style="background-color:rgb(181, 209, 218)"><div>1</div></div>
+                    <div class="process-icon"></div>
+                    <div class="process-tag">Consultation</div>
+                    <div class="process-desc">During our consultation process, we'll discuss your vision, assess your space and needs, and review your project budget.</div>
+                </div>
+                <div class="process-cell">
+                    <div class="process-numeral" style="background-color:rgb(181, 209, 218)"><div>2</div></div>
+                    <div class="process-icon"></div>
+                    <div class="process-tag">Design</div>
+                    <div class="process-desc">Next, we'll create a stunning design plan that perfectly compliments your space. We'll talk plant selection, lighting requirements, pairings, placements, and layout.</div>
+                </div>
+                <div class="process-cell">
+                    <div class="process-numeral" style="background-color:rgb(181, 209, 218)"><div>3</div></div>
+                    <div class="process-icon"></div>
+                    <div class="process-tag">Installation & Beyond</div>
+                    <div class="process-desc">From delivery to install, we'll handle everything to bring your vision to life, including ongoing maintenence to keep your plantscape alive and thriving for years to come.</div>
+                </div>
             </div>
         </section>
 
-        <section class="content float-right">
-            <img src="https://placehold.co/500">
-            <div>
+        <section class="content float-right" style="margin-top:100px;">
+            <img src="images/exterior_design.jpg" style="width: 500px;">
+            <div style="padding: 50px;">
                 <h2>Outdoor Living Spaces</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur distinctio ea explicabo ratione. Doloribus iusto omnis dolores eos quae illo ullam tempore eaque, sed porro vero autem dolorum, odit rerum.</p>
+                <p>Extend your living spaces outside. Whether it's an inviting patio, a vibrant garden, or a elegant lounge area, we also create stunning outdoor plantscapes that transform your space into an inviting oasis. From lush greenery and colorful flowers to elegant planters and thoughtful landscaping, the right design can enhance your outdoor space, adding the perfect touch of beauty and nature to your home or office.</p>
             </div>
         </section>
 
-        <section>
+        <section style="margin: 150px 0px;">
             <div class="swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide"><p style="padding: 25px;">According to a recent <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4419447/">study</a>, designing plants into your surroundings has a strong corelation with lower stress levels and improved productivity.</p></div>
+                    <div class="swiper-slide"><p>Biophilic design principles are <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8871637/">recognized across industries</a> as an important lifestyle mechanism, fostering productivity, mindfulness, sleep quality, and even immunity.</p></div>
+                    <div class="swiper-slide"><p>Plants have also been shown to <a href="https://ntrs.nasa.gov/citations/19930072988">improve indoor air quality</a>, having a positive impact on our physical and mental health, reducing the likelihood of concerns such as sad building syndrome</p></div>
                     <!-- ... -->
                 </div>
                 <!-- If you want navigation buttons -->
@@ -72,7 +102,7 @@
 
         <section>
             <h2 style="text-align:center;">Let's Get Connected</h2>
-            <div class="button"><a href="pages/contact.html">Contact Us</a></div>
+            <a href="pages/contact.html" class="button">Contact Us</a>
             <ul class="alt-contacts">
                 <li class="left"><a href="https://www.facebook.com/people/PetalsBloom-Designs/61561561566192/" target=”_blank”><i class="fa fa-facebook"></i></a></li>
                 <li><a href="tel:9702171293"><i class="fa fa-phone"></i></a></li>
